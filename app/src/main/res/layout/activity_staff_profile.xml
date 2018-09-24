@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/appbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:layout_marginBottom="63dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/photoImage"
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    app:srcCompat="@mipmap/ic_launcher"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="24dp"/>
+
+                <TextView
+                    android:id="@+id/nameText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/photoImage"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:text="Name"
+                    android:textColor="#4e7b9f"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#19000000"
+                    android:layout_below="@+id/nameText"
+                    android:layout_marginTop="24dp"></RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="192dp"
+                    android:layout_marginBottom="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/job_title"
+                            style="@style/ProfileTextTitle"/>
+
+                        <TextView
+                            android:id="@+id/roleText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Male"
+                            style="@style/ProfileTextValue"
+                            android:layout_marginTop="16dp"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/company"
+                            style="@style/ProfileTextTitle"/>
+
+                        <TextView
+                            android:id="@+id/companyText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Value"
+                            style="@style/ProfileTextValue"
+                            android:layout_marginTop="16dp"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="#06000000"
+                        android:layout_marginTop="20dp"></RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/email"
+                            style="@style/ProfileTextTitle"/>
+
+                        <TextView
+                            android:id="@+id/emailText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Value"
+                            style="@style/ProfileTextValue"
+                            android:layout_marginTop="16dp"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/phone"
+                            style="@style/ProfileTextTitle"/>
+
+                        <TextView
+                            android:id="@+id/phoneText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Value"
+                            style="@style/ProfileTextValue"
+                            android:layout_marginTop="16dp"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="#06000000"
+                        android:layout_marginTop="20dp"></RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/experience_title"
+                            style="@style/ProfileTextTitle"/>
+
+                        <TextView
+                            android:id="@+id/experienceText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Value"
+                            style="@style/ProfileTextValue"
+                            android:layout_marginTop="16dp"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/availabilityAsCoachLayout">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/availability_as_coach"
+                            style="@style/ProfileTextTitle"/>
+
+                        <TextView
+                            android:id="@+id/availabilityAsCoachText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Value"
+                            style="@style/ProfileTextValue"
+                            android:layout_marginTop="16dp"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/officeNumberLayout">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/office_number"
+                            style="@style/ProfileTextTitle"/>
+
+                        <TextView
+                            android:id="@+id/officeNumberText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Value"
+                            style="@style/ProfileTextValue"
+                            android:layout_marginTop="16dp"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+        <include layout="@layout/bottom_menu" />
+
+        <fragment
+            android:id="@+id/popupFragment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:name="atproj.cyplay.com.asperteamcoach.ui.fragment.base.BasePopupFragment"
+            app:layout_popup="@layout/fragment_base_popup"/>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,3 @@
+include ':app'
+include ':asperteamapi'
+project(":asperteamapi").projectDir = file("../Asperteam/asperteamapi")

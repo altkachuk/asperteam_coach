@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="63dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#ffffff"
+        android:layout_marginTop="7dp"></RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#19000000"
+        android:layout_marginTop="7dp"></RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/homeItem"
+        android:layout_width="46dp"
+        android:layout_height="56dp"
+        app:srcCompat="@drawable/ic_home"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="7dp"
+        android:scaleType="center"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/homeItem"
+        android:layout_toLeftOf="@+id/callItem">
+
+        <ImageView
+            android:id="@+id/relaxItem"
+            android:layout_width="46dp"
+            android:layout_height="56dp"
+            app:srcCompat="@drawable/ic_relax"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:scaleType="center"/>
+
+    </RelativeLayout>
+
+
+
+    <ImageView
+        android:id="@+id/callItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_chat_big"
+        android:layout_centerHorizontal="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/callItem"
+        android:layout_toLeftOf="@+id/communityItem">
+
+        <ImageView
+            android:id="@+id/qualifySituationsItem"
+            android:layout_width="46dp"
+            android:layout_height="56dp"
+            app:srcCompat="@drawable/ic_problem"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:scaleType="center"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/communityItem"
+        android:layout_width="46dp"
+        android:layout_height="56dp"
+        app:srcCompat="@drawable/ic_chat"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="7dp"
+        android:scaleType="center"/>
+
+
+</RelativeLayout>

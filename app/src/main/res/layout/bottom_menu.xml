@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="63dp"
+    android:layout_alignParentBottom="true">
+    <fragment
+        android:id="@+id/bottomMenuFragment"
+        android:name="atproj.cyplay.com.asperteamcoach.ui.fragment.BottomMenuFragment"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"/>
+</RelativeLayout>

@@ -1,0 +1,285 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="60dp"
+    android:background="#f9f9f7">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp">
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+
+            <ImageView
+                android:layout_width="4dp"
+                android:layout_height="1dp"
+                android:background="#8A8A8A"
+                android:gravity="bottom"/>
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+
+            <ImageView
+                android:layout_width="4dp"
+                android:layout_height="1dp"
+                android:background="#8A8A8A"
+                app:layout_marginBottomPercent="10%"
+                android:gravity="bottom"/>
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+
+            <ImageView
+                android:layout_width="4dp"
+                android:layout_height="1dp"
+                android:background="#8A8A8A"
+                app:layout_marginBottomPercent="20%"
+                android:gravity="bottom"/>
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+
+            <ImageView
+                android:layout_width="4dp"
+                android:layout_height="1dp"
+                android:background="#8A8A8A"
+                app:layout_marginBottomPercent="30%"
+                android:gravity="bottom"/>
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+
+            <ImageView
+                android:layout_width="4dp"
+                android:layout_height="1dp"
+                android:background="#8A8A8A"
+                app:layout_marginBottomPercent="40%"
+                android:gravity="bottom"/>
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+
+            <ImageView
+                android:layout_width="4dp"
+                android:layout_height="1dp"
+                android:background="#8A8A8A"
+                app:layout_marginBottomPercent="50%"
+                android:gravity="bottom"/>
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+
+            <ImageView
+                android:layout_width="4dp"
+                android:layout_height="1dp"
+                android:background="#8A8A8A"
+                app:layout_marginBottomPercent="60%"
+                android:gravity="bottom"/>
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+
+            <ImageView
+                android:layout_width="4dp"
+                android:layout_height="1dp"
+                android:background="#8A8A8A"
+                app:layout_marginBottomPercent="70%"
+                android:gravity="bottom"/>
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+
+            <ImageView
+                android:layout_width="4dp"
+                android:layout_height="1dp"
+                android:background="#8A8A8A"
+                app:layout_marginBottomPercent="80%"
+                android:gravity="bottom"/>
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+
+            <ImageView
+                android:layout_width="4dp"
+                android:layout_height="1dp"
+                android:background="#8A8A8A"
+                app:layout_marginBottomPercent="90%"
+                android:gravity="bottom"/>
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+
+            <ImageView
+                android:layout_width="4dp"
+                android:layout_height="1dp"
+                android:background="#8A8A8A"
+                app:layout_marginBottomPercent="99%"
+                android:gravity="bottom"/>
+
+        </android.support.percent.PercentRelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="18dp">
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="4dp"
+                android:background="#8A8A8A"
+                android:gravity="bottom"/>
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="4dp"
+                android:background="#8A8A8A"
+                app:layout_marginLeftPercent="16.7%"
+                android:gravity="bottom"/>
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="4dp"
+                android:background="#8A8A8A"
+                app:layout_marginLeftPercent="33.3%"
+                android:gravity="bottom"/>
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="4dp"
+                android:background="#8A8A8A"
+                app:layout_marginLeftPercent="50%"
+                android:gravity="bottom"/>
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="4dp"
+                android:background="#8A8A8A"
+                app:layout_marginLeftPercent="66.7%"
+                android:gravity="bottom"/>
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="4dp"
+                android:background="#8A8A8A"
+                app:layout_marginLeftPercent="83.3%"
+                android:gravity="bottom"/>
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="4dp"
+                android:background="#8A8A8A"
+                app:layout_marginLeftPercent="99%"
+                android:gravity="bottom"/>
+
+        </android.support.percent.PercentRelativeLayout>
+    </RelativeLayout>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lineChart"></com.github.mikephil.charting.charts.LineChart>
+
+    <include layout="@layout/progress_bar" />
+
+</RelativeLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/appbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="63dp"
+            android:paddingTop="24dp"
+            android:paddingBottom="24dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="@drawable/background_my_indicators"
+                android:id="@+id/dayHistoryItem">
+
+                <RelativeLayout
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:paddingLeft="65dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/daily_indicators"
+                        android:textColor="#9d7465"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/ic_time"
+                    android:layout_marginLeft="20dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/background_my_history"
+                android:id="@+id/weekHistoryItem">
+
+                <RelativeLayout
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:paddingLeft="65dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/weekly_indicators"
+                        android:textColor="#626b96"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/ic_history"
+                    android:layout_marginLeft="20dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/background_my_data"
+                android:id="@+id/monthHistoryItem">
+
+                <RelativeLayout
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:paddingLeft="65dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/monthly_indicators"
+                        android:textColor="#30718c"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/ic_statistic"
+                    android:layout_marginLeft="20dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/background_help_coach">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name Surname"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#284760"
+                        android:textStyle="bold"
+                        android:id="@+id/nameText"/>
+
+                    <ImageView
+                        android:id="@+id/photoImage"
+                        android:layout_width="112dp"
+                        android:layout_height="112dp"
+                        app:srcCompat="@mipmap/ic_launcher"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/nameText"
+                        android:layout_marginTop="6dp"/>
+
+                    <ImageView
+                        android:id="@+id/callButton"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        app:srcCompat="@drawable/ic_call"
+                        android:layout_alignTop="@+id/photoImage"
+                        android:layout_alignRight="@+id/photoImage"
+                        android:layout_marginTop="62dp"
+                        android:layout_marginRight="80dp"
+                        android:layout_marginBottom="0dp"/>
+
+                    <ImageView
+                        android:id="@+id/chatButton"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        app:srcCompat="@drawable/ic_message"
+                        android:layout_alignTop="@+id/photoImage"
+                        android:layout_alignLeft="@+id/photoImage"
+                        android:layout_marginTop="62dp"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginBottom="0dp"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <include layout="@layout/bottom_menu" />
+
+        <fragment
+            android:id="@+id/popupFragment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:name="atproj.cyplay.com.asperteamcoach.ui.fragment.base.BasePopupFragment"
+            app:layout_popup="@layout/fragment_base_popup"/>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

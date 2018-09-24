@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="atproj.cyplay.com.asperteamcoach">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_app"
+        android:label="AsperTeamCoach"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name=".dagger.App">
+
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="@string/maps_server_key" />
+
+        <service
+            android:name="atproj.cyplay.com.asperteamcoach.util.AsperteamFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_stat_ic_notification" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <activity android:name=".ui.activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.activity.StartActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            android:label="@string/activity_login"/>
+
+        <activity
+            android:name=".ui.activity.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="@string/activity_home"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".ui.activity.PatientActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="@string/activity_patient"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="PatientActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.activity.HistoryActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="@string/daily_indicators"
+            android:screenOrientation="portrait"/>
+
+
+        <activity
+            android:name=".ui.activity.ProfileActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="@string/activity_profile"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".ui.activity.PatientProfileActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="@string/activity_patient_profile"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".ui.activity.StaffProfileActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="@string/activity_staff_profile"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".ui.activity.ProblemCategoriesActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="@string/stress_situations"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".ui.activity.HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.activity.HomeActivity" />
+        </activity>
+
+        <activity
+            android:name=".ui.activity.SituationsActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="@string/activity_situations"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".ui.activity.RelaxActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="@string/relaxation_exercises"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".ui.activity.HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.activity.HomeActivity" />
+        </activity>
+
+        <activity
+            android:name=".ui.activity.ParametersActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="@string/activity_parameters"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".ui.activity.HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.activity.HomeActivity" />
+        </activity>
+
+        <activity
+            android:name=".ui.activity.TermsOfServiceActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="@string/activity_terms_of_service"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".ui.activity.HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.activity.HomeActivity" />
+        </activity>
+
+    </application>
+
+</manifest>

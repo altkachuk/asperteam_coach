@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b34e7b9f">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/background_popup"
+                android:layout_centerVertical="true"
+                android:layout_margin="20dp"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@mipmap/ic_launcher"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"/>
+
+                <TextView
+                    android:id="@+id/titleText"
+                    style="@style/PopupTextTitle"
+                    android:text="Some Title"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/descriptionText"
+                    style="@style/PopupTextDescription"
+                    android:text="@string/band_agreement_text"
+                    android:layout_marginTop="6dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="24dp">
+
+                    <Button
+                        android:id="@+id/negativeButton"
+                        style="@style/PopupNegativeButton"
+                        android:background="@drawable/background_popup_negative_button"
+                        android:text="Cancel" />
+
+                    <Button
+                        android:id="@+id/positiveButton"
+                        style="@style/PopupPositiveeButton"
+                        android:background="@drawable/background_popup_positive_button"
+                        android:text="OK" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

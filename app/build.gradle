@@ -1,0 +1,95 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+android {
+    signingConfigs {
+        pp {
+            keyAlias 'asperteam'
+            keyPassword 'asperteam'
+            storePassword 'asperteam'
+            storeFile file('D:/Workspaces/AndroidStudio/Asperteam/app/asperteam_key_store_pp.jks')
+        }
+        release {
+            keyAlias 'asperteam'
+            keyPassword 'asperteam'
+            storePassword 'asperteam'
+            storeFile file('D:/Workspaces/AndroidStudio/Asperteam/app/asperteam_key_store_pp.jks')
+        }
+    }
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+    defaultConfig {
+        applicationId "atproj.cyplay.com.asperteamcoach"
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        pp {
+            minifyEnabled false
+            applicationIdSuffix '.pp'
+            signingConfig signingConfigs.pp
+            debuggable true
+        }
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            debuggable false
+        }
+    }
+    flavorDimensions "default"
+
+    productFlavors {
+        asperteamcoach {
+            applicationId "atproj.cyplay.com.asperteamcoach"
+
+            //buildConfigField 'String', 'HOST', '\"{\\"pp\\" : \\"\\",\\"release\\": \\"\\",\\"debug\\":\\"http://wsskiosk3.zugara.com/asperteam/\\"}\"'
+            buildConfigField 'String', 'HOST', '\"{\\"pp\\" : \\"https://api.anticipstress.eu/\\",\\"release\\": \\"\\",\\"debug\\":\\"https://api.anticipstress.eu/\\"}\"'
+            dimension "default"
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.+'
+    implementation 'com.android.support:percent:27.+'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:design:27.+'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    implementation 'com.google.dagger:dagger:2.9'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.9'
+
+    provided 'javax.annotation:jsr250-api:1.0'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation 'com.squareup.okio:okio:1.13.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+    compile 'org.riversun:okhttp3-cookie-helper:1.0.0'
+    implementation 'com.google.code.gson:gson:2.8.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.0.1'
+
+    implementation project(':asperteamapi')
+
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.google.code.findbugs:jsr305:3.0.2'
+
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    implementation 'com.google.firebase:firebase-core:16.0.1'
+    implementation 'com.google.firebase:firebase-messaging:17.1.0'
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.1'
+    implementation 'com.google.android.gms:play-services-maps:15.0.1'
+
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+
+}
+
+apply plugin: 'com.google.gms.google-services'

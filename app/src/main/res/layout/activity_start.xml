@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/appbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/bg"
+                android:scaleType="centerCrop"/>
+        </FrameLayout>
+
+        <fragment
+            android:id="@+id/loginFragment"
+            android:name="atproj.cyplay.com.asperteamcoach.ui.fragment.LoginFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"/>
+
+        <fragment
+            android:id="@+id/popupFragment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:name="atproj.cyplay.com.asperteamcoach.ui.fragment.base.BasePopupFragment"
+            app:layout_popup="@layout/fragment_start_popup"/>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

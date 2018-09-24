@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/appbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/dayButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/background_date_chooser"
+                android:text="@string/day"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/weekButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_date_chooser_not_active"
+                android:text="@string/week"
+                android:textAlignment="center"
+                android:textColor="#336699"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/monthButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/background_date_chooser_not_active"
+                android:text="@string/month"
+                android:textAlignment="center"
+                android:textColor="#336699"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="38dp"
+            android:layout_marginBottom="56dp">
+
+            <fragment
+                android:name="atproj.cyplay.com.asperteamcoach.ui.fragment.RmssdHistoryFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rmssdHistoryFragment"
+                android:layout_weight="1"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="#F4F2ED">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/trend_of_the_day"
+                    android:id="@+id/trendText"
+                    android:textColor="#000000"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="#F9F9F7"
+                    android:layout_marginTop="30dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_centerInParent="true"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            app:srcCompat="@drawable/ic_more_relaxed"
+                            android:id="@+id/trendImage"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/more_relaxed"
+                            android:id="@+id/trendStatusText"
+                            android:textColor="#275254"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toRightOf="@+id/trendImage"/>
+
+                    </LinearLayout>
+
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <fragment
+                android:name="atproj.cyplay.com.asperteamcoach.ui.customview.StressHistoryFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/stressHistoryFragment"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <include layout="@layout/bottom_menu" />
+        <fragment
+            android:id="@+id/popupFragment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:name="atproj.cyplay.com.asperteamcoach.ui.fragment.base.BasePopupFragment"
+            app:layout_popup="@layout/fragment_base_popup"/>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

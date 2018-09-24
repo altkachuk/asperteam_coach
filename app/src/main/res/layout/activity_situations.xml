@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/appbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/situationListRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="63dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"/>
+
+        <include layout="@layout/bottom_menu" />
+        <fragment
+            android:id="@+id/popupFragment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:name="atproj.cyplay.com.asperteamcoach.ui.fragment.base.BasePopupFragment"
+            app:layout_popup="@layout/fragment_base_popup"/>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
