@@ -39,7 +39,7 @@ public class RelaxActivity extends BaseMenuActivity {
     RecyclerView recyclerView;
 
     private SituationAdapter _adapter;
-    private List<SituationResource> _resources;
+    private List<SituationResource> _resources = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -84,7 +84,12 @@ public class RelaxActivity extends BaseMenuActivity {
             @Override
             public void onSucess(List<SituationResource> resources) {
                 hidePreloader();
-                _resources = resources;
+                _resources.clear();
+                for (SituationResource resource : resources) {
+                    if (resource.isPublished()) {
+                        _resources.add(resource);
+                    }
+                }
                 _adapter.setItems(_resources);
             }
 
